@@ -1,5 +1,5 @@
 @extends('layouts.principal')
-@section('titulo','Índice')
+@section('titulo','Cursos')
 
 @section('contenido')
 <table class="table table-bordered mt-3">

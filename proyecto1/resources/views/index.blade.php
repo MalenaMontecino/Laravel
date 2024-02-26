@@ -1,7 +1,6 @@
 @extends('layouts.principal')
-@section('titulo','Índice')
+@section('titulo','ABP Politécnics')
 
 @section('contenido')
-<h1>Título</h1>
-<p>Esto es la página índice</p>
+<img src="../public/img/logoPolitecnics.png" height="200px">
 @endsection
