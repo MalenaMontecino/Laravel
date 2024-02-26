@@ -7,29 +7,16 @@
 </head>
 <body>
        <h4>Hola  {{$nombre . ' '. $apellidos }}</h4> <!--Blade-->
-      <h5> {!!  !!}</h5>
+     
        @if ($nombre == 'Malena')
        {{'¡Eres la mejor!'}}
         
        @else
        {{'Buen intento'}}
-           
+         
        @endif
 
-        {{--  --}}
-
-       @switch($type)
-           @case(1)
-               
-               @break
-           @case(2)
-               
-               @break
-           @default
-               
-       @endswitch
-
-   
+      
    
 </body>
 </html>
