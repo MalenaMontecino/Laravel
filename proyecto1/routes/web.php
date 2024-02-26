@@ -1,5 +1,7 @@
 <?php
-
+use App\Clases\Cicle;
+use App\Clases\Curs;
+//use Cursos\Curs;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
@@ -44,3 +49,19 @@ Route::get('/parametre/{n1}/{n2}', function($n1,$n2){
     return 'Resultado = '. $sum;
     })-> name('suma');
     
+Route::get('/', function(){
+    return view('index');
+        })-> name('index0');
+Route::get('/cicles', function(){
+    $Cicle1 = new Cicle( 1,'DAW','Desarrollo de aplicaciones web');
+    $Cicle2 = new Cicle (2, 'DAM','Desarrollo de aplicaciones multiplataforma');
+    $Cicles = array($Cicle1, $Cicle2);
+    return view('Cicles.index',compact('Cicles'));
+        })-> name('index1');
+Route::get('/cursos', function(){
+    $Curs1 = new Curs(1,'DAW1A','Desenvolupament Aplicacions Web de primer matí A','DAW');
+    $Curs2 = new Curs (2, 'DAM2A','Desenvolupament Aplicacions Web de segon matí A','DAW');
+    $Curs3 = new Curs (2, 'DAW2B','Desenvolupament Aplicacions Web de segon matí B','DAW');
+    $Cursos = array($Curs1,$Curs2,$Curs3);
+    return view('Cursos.index',compact('Cursos'));
+        })-> name('index1');

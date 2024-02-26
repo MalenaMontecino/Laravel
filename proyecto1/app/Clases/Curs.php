@@ -1,14 +1,15 @@
 <?php
-namespace Cursos;
-final  class Curs{
+namespace App\Clases;
+  class Curs{
     private  $id;
-    private $nom;
     private $sigles;
-
-    public function __construct($id, $nom, $sigles) {
+    private $nom;
+    private $siglesCicle;
+    public function __construct($id, $sigles, $nom,  $siglesCicle) {
         $this->id = $id;
-        $this->nom = $nom;
         $this->sigles = $sigles;
+        $this->nom = $nom;
+        $this->siglesCicle =  $siglesCicle;
     }
 
     /**
@@ -67,6 +68,26 @@ final  class Curs{
     public function setSigles($sigles)
     {
         $this->sigles = $sigles;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of siglesCicle
+     */ 
+    public function getSiglesCicle()
+    {
+        return $this->siglesCicle;
+    }
+
+    /**
+     * Set the value of siglesCicle
+     *
+     * @return  self
+     */ 
+    public function setSiglesCicle($siglesCicle)
+    {
+        $this->siglesCicle = $siglesCicle;
 
         return $this;
     }

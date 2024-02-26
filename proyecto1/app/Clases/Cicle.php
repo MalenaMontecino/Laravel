@@ -1,9 +1,10 @@
 <?php
-namespace Cicles;
-final class Cicle{
+namespace App\Clases;
+ class Cicle{
     private $id;
     private $nom;
     private $sigles;
+
    
     public function __construct($id, $nom, $sigles) {
         $this->id = $id;
