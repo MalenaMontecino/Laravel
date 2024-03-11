@@ -15,13 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/', function () {
+
+//RUTA CON CONTROLLER
+Route::get('/', [App\Http\Controllers\SaludoController::class,'inicio']);
+Route::get('/hello',[App\Http\Controllers\SaludoController::class,'hello']);
+
+//RUTA CON PLANTILLA
+Route::get('/index', function () {
     return view('index');
 });
-
 
 Route::get('/saludo', function(){
     $data['nombre'] = 'Isabel';
@@ -49,9 +51,7 @@ Route::get('/parametre/{n1}/{n2}', function($n1,$n2){
     return 'Resultado = '. $sum;
     })-> name('suma');
     
-Route::get('/', function(){
-    return view('index');
-        })-> name('index0');
+
 Route::get('/cicles', function(){
     $Cicle1 = new Cicle( 1,'DAW','Desarrollo de aplicaciones web');
     $Cicle2 = new Cicle (2, 'DAM','Desarrollo de aplicaciones multiplataforma');
