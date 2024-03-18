@@ -1,4 +1,6 @@
 <?php
+use App\Http\Controllers\PuasController;
+use App\Http\Controllers\SaludoController;
 use App\Clases\Cicle;
 use App\Clases\Curs;
 //use Cursos\Curs;
@@ -15,10 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 //RUTA CON CONTROLLER
-Route::get('/', [App\Http\Controllers\SaludoController::class,'inicio']);
-Route::get('/hello',[App\Http\Controllers\SaludoController::class,'hello']);
+Route::get('/', [SaludoController::class,'inicio']);
+Route::get('/hello',[SaludoController::class,'hello']);
 
 //rutas de prueba
 Route::get('/formularioPrueba',[PuasController::class, 'index']);
