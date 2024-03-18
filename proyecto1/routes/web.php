@@ -20,6 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\SaludoController::class,'inicio']);
 Route::get('/hello',[App\Http\Controllers\SaludoController::class,'hello']);
 
+//rutas de prueba
+Route::get('/formularioPrueba',[PuasController::class, 'index']);
+Route::post('/kiki/{coment}',[PuasController::class, 'formulario']);
+
 //RUTA CON PLANTILLA
 Route::get('/index', function () {
     return view('index');
