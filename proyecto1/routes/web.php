@@ -16,8 +16,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-//RUTA CON CONTROLLER
+//RUTA CON PLANTILLA
+Route::get('/index', function () {
+    return view('index');
+});
+//RUTA CON CONTROLLERhp
 Route::get('/', [SaludoController::class,'inicio']);
 Route::get('/hello',[SaludoController::class,'hello']);
 
@@ -25,10 +28,7 @@ Route::get('/hello',[SaludoController::class,'hello']);
 Route::get('/formularioPrueba',[PuasController::class, 'index']);
 Route::post('/kiki/{coment}',[PuasController::class, 'formulario']);
 
-//RUTA CON PLANTILLA
-Route::get('/index', function () {
-    return view('index');
-});
+
 
 Route::get('/saludo', function(){
     $data['nombre'] = 'Isabel';
