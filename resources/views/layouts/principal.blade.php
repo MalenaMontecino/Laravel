@@ -26,14 +26,42 @@
                         Dades mestres
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Cursos</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Tipus usuaris</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Usuaris</a></li>
                       <li><a class="dropdown-item" href="{{url('/cicles')}}">Cicles</a></li>
-                    
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Mòduls</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Asignar Professors</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Assignar alumnes</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Resultats aprenentage</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Criteris avaluació</a></li>
                     </ul>
                   </li>
-                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Professors
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Assignar alumnes</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cicles')}}">Resultats aprenentatge</a></li>
+                      <li><a class="dropdown-item" href="{{url('/cicles')}}">Criteris avaluació</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="{{url('/cicles')}}">Autoavaluació alumnes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Alumnes
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Autoavaluació</a></li>
+                                        
+                    </ul>
+                  </li>
                 </ul>
+                
               </div>
+              <p style="color: white;display: flex ; justify-content: center ; margin-bottom:0;">Malena Montecino</p>
             </div>
           {{-- </nav> --}}
       </nav>
