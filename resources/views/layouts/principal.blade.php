@@ -26,15 +26,15 @@
                         Dades mestres
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Tipus usuaris</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Usuaris</a></li>
+                      <li><a class="dropdown-item" href="{{url('/tipus-usuaris')}}">Tipus usuaris</a></li>
+                      <li><a class="dropdown-item" href="{{url('/usuaris')}}">Usuaris</a></li>
                       <li><a class="dropdown-item" href="{{url('/cicles')}}">Cicles</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Mòduls</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Asignar Professors</a></li>
+                      <li><a class="dropdown-item" href="{{url('/moduls')}}">Mòduls</a></li>
+                      <li><a class="dropdown-item" href="{{url('/')}}">Asignar Professors</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Assignar alumnes</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Resultats aprenentage</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Criteris avaluació</a></li>
+                      <li><a class="dropdown-item" href="{{url('/')}}">Assignar alumnes</a></li>
+                      <li><a class="dropdown-item" href="{{url('/resultats-aprenentatge')}}">Resultats aprenentage</a></li>
+                      <li><a class="dropdown-item" href="{{url('/criterios')}}">Criteris avaluació</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -42,11 +42,11 @@
                         Professors
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Assignar alumnes</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cicles')}}">Resultats aprenentatge</a></li>
-                      <li><a class="dropdown-item" href="{{url('/cicles')}}">Criteris avaluació</a></li>
+                      <li><a class="dropdown-item" href="{{url('/')}}">Assignar alumnes</a></li>
+                      <li><a class="dropdown-item" href="{{url('/resultats-aprenentatge')}}">Resultats aprenentatge</a></li>
+                      <li><a class="dropdown-item" href="{{url('/criterios')}}">Criteris avaluació</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="{{url('/cicles')}}">Autoavaluació alumnes</a></li>
+                      <li><a class="dropdown-item" href="{{url('/')}}">Autoavaluació alumnes</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
                         Alumnes
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{{url('/cursos')}}">Autoavaluació</a></li>
+                      <li><a class="dropdown-item" href="{{url('/')}}">Autoavaluació</a></li>
                                         
                     </ul>
                   </li>
